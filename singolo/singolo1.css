@@ -1,0 +1,268 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 7px
+}
+
+.header {
+    background-color: #2d303a;
+}
+
+.header:after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
+    position: absolute;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 24px;
+}
+
+.header__logo:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.header__logo:after {
+    content: "*";
+    color: #f06c64;
+    position: absolute;
+    top: -3%;
+}
+
+.header-nav__list {
+    list-style-type: none;
+    display: flex;
+    padding-top: 13px;
+}
+
+.header-nav__list a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 15px 0 14px;
+    font-weight: 700;
+}
+
+.header-nav__list li:last-child a {
+    
+    margin: 0 0 0 13px;
+  
+}
+.header-nav__title {
+    position: relative;
+}
+
+.header-nav__title:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #494e62;
+    top: 54%;
+}
+
+.header-nav__title:last-child:after {
+    display: none;
+}
+
+.header-nav__title a:hover {
+    color: #f06c64;
+    transition: 0.3s;
+}
+
+.slider {
+    background-color: #f06c64;
+}
+
+.slider:after {
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+    position: absolute;
+}
+
+.slider-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.slider__button {
+    background: url("assets/chev.svg") no-repeat;
+    width: 16px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.slider__button:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.slider__button--right {
+    transform: rotate(180deg);
+}
+
+.slider__phone {
+    transition: 0.3s;
+}
+
+.slider__phone:hover {
+    opacity: 0.8;
+}
+
+.slider__phone--vertical {
+    background: url("assets/iPhone Vertical.png") no-repeat;
+    width: 242px;
+    height: 488px;
+}
+
+.slider__phone--horizontal {
+    background: url("assets/iPhone Horizontal.png") no-repeat;
+    width: 500px;
+    height: 240px;
+    transform: translate(15px,-4px);
+}
+
+.services {
+    background-color: #f2f2f2;
+    color: #767e9e;
+}
+
+.services__description-wrap {
+    padding-top: 65px;
+    padding-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services__description-wrap h2 {
+    margin: 0 0 2px 0;
+    font-weight: 900;
+    font-size: 30px;
+    color: #666d89;
+}
+
+.services__description-wrap p {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+}
+
+.services__items-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__item {
+    height: 92px;
+    width: 219px;
+    overflow: hidden;
+    padding-left: 82px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.services__item:before {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    transform: translate(8px, -50%);
+}
+
+.services__item h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+.services__item p {
+    margin: 0;
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.services__item--design:before {
+    background: url("assets/pen.svg") no-repeat;
+    left: -8px;
+    top: 38%;
+}
+
+.services__item--ideas:before {
+    background: url("assets/bulb.svg") no-repeat;
+    left: -8px;
+    top: 38%;
+}
+
+.services__item--love:before {
+    background: url("assets/heart.svg") no-repeat;
+    left: -8px;
+    top: 37%;
+}
+
+.services__item--layout:before {
+    background: url("assets/phone.svg") no-repeat;
+    left: -8px;
+    top: 37%;
+}
+
+.services__item--support:before {
+    background: url("assets/bubble.svg") no-repeat;
+    left: -8px;
+    top: 37%;
+}
+
+.services__item--star:before {
+    background: url("assets/star.svg") no-repeat;
+    left: -8px;
+    top: 37%;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Black.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("assets/Lato-Bold.ttf");
+    font-weight: bold;
+}
