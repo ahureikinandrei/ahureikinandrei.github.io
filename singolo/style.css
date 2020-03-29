@@ -270,11 +270,6 @@ img {
     display: none;
 }
 
-/*.header-nav__title a:hover {
-    color: #f06c64;
-    transition: 0.3s;
-}*/
-
 .slider {
     background-color: #f06c64;
     border-bottom: 6px solid  #ea676b;
