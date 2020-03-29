@@ -611,6 +611,7 @@ img {
 @media (max-width: 375px) {
     .services__item {
         width: 100%;
+        overflow: hidden;
         margin-bottom: 15px
     } 
 }
