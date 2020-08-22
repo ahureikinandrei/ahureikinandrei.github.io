@@ -290,6 +290,7 @@ img {
 
 .slider-wrap {
     position: relative;
+    display: flex;
     height: 58.3vw;
     max-height: 594px;
 }
